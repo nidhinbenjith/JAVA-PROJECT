@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="College timetable administration dashboard">
+    <title>Automatic Timetable Generator</title>
+    <link rel="stylesheet" href="/style.css?v=20261023-3">
+    <script src="/app.js?v=20261023-4" defer></script>
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar" id="sidebar">
+            <a class="brand" href="/" aria-label="Automatic Timetable Generator home">
+                <span class="brand-mark">AT</span>
+                <span><strong>CampusPlan</strong><small>Timetable manager</small></span>
+            </a>
+            <p class="nav-heading">WORKSPACE</p>
+            <nav id="main-nav" aria-label="Main navigation">
+                <button class="nav-link active" data-page="dashboard"><span>▦</span> Dashboard</button>
+                <p class="nav-heading">ACADEMIC SETUP</p>
+                <button class="nav-link" data-page="departments"><span>◫</span> Departments</button>
+                <button class="nav-link" data-page="courses"><span>▤</span> Courses</button>
+                <button class="nav-link" data-page="classes"><span>▣</span> Classes &amp; batches</button>
+                <button class="nav-link" data-page="teachers"><span>♙</span> Teachers</button>
+                <button class="nav-link" data-page="subjects"><span>▧</span> Subjects</button>
+                <button class="nav-link" data-page="classrooms"><span>⌂</span> Classrooms</button>
+                <button class="nav-link" data-page="time-slots"><span>◷</span> Time slots</button>
+                <button class="nav-link" data-page="assignments"><span>⇄</span> Teacher assignments</button>
+                <button class="nav-link" data-page="requirements"><span>☷</span> Subject requirements</button>
+                <button class="nav-link" data-page="teacher-availability"><span>◷</span> Teacher availability</button>
+                <p class="nav-heading">TIMETABLE</p>
+                <button class="nav-link" data-page="generate"><span>✦</span> Generate timetable</button>
+                <button class="nav-link" data-page="timetable"><span>▦</span> View timetable</button>
+                <button class="nav-link" data-page="conflicts"><span>⚑</span> Conflict report</button>
+                <p class="nav-heading">PREFERENCES</p>
+                <button class="nav-link" data-page="settings"><span>⚙</span> Settings &amp; help</button>
+            </nav>
+            <div class="sidebar-note"><span class="online-dot"></span> Local college workspace</div>
+        </aside>
+
+        <main class="main-area">
+            <header class="topbar">
+                <button class="menu-button" id="menu-button" aria-label="Toggle navigation">☰</button>
+                <div class="breadcrumb"><span>Workspace</span><b>/</b><strong id="breadcrumb-title">Dashboard</strong></div>
+            </header>
+            <div id="notice" class="notice hidden" role="status"></div>
+            <section id="view" class="content" aria-live="polite"></section>
+            <footer class="app-footer">Automatic Timetable Generator <span>·</span> College administration workspace</footer>
+        </main>
+    </div>
+</body>
+</html>
